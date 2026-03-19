@@ -1,0 +1,92 @@
+{
+  "categories": {
+    "frontend": {
+      "label": "Frontend",
+      "skills": ["react", "angular", "vue", "html", "css", "javascript", "typescript",
+        "tailwind", "bootstrap", "jquery", "sass", "webpack", "next", "nuxt",
+        "svelte", "redux", "vite", "figma"]
+    },
+    "backend": {
+      "label": "Backend",
+      "skills": ["node", "nodejs", "express", "django", "flask", "spring", "fastapi",
+        "laravel", "rails", "php", "java", "python", "golang", "rust",
+        "c++", "c#", "dotnet", "kotlin", "ruby"]
+    },
+    "database": {
+      "label": "Database",
+      "skills": ["mongodb", "mysql", "postgresql", "sql", "sqlite", "redis", "firebase",
+        "cassandra", "dynamodb", "oracle", "nosql", "supabase", "prisma", "mongoose"]
+    },
+    "devops": {
+      "label": "DevOps & Cloud",
+      "skills": ["docker", "kubernetes", "aws", "azure", "gcp", "git", "github", "gitlab",
+        "ci/cd", "jenkins", "terraform", "linux", "nginx", "heroku", "vercel", "netlify"]
+    },
+    "data_science": {
+      "label": "Data Science",
+      "skills": ["pandas", "numpy", "scikit", "tensorflow", "keras", "pytorch", "matplotlib",
+        "seaborn", "tableau", "powerbi", "excel", "r", "spark", "hadoop",
+        "nlp", "ml", "deep learning", "opencv", "jupyter"]
+    },
+    "tools": {
+      "label": "Tools & Concepts",
+      "skills": ["jira", "postman", "rest", "graphql", "api", "agile", "scrum",
+        "oop", "dsa", "system design", "microservices", "testing", "jest",
+        "mocha", "linux", "bash", "regex", "vs code"]
+    }
+  },
+
+  "synonyms": {
+    "nodejs": ["node", "node.js", "nodejs"],
+    "next": ["next.js", "nextjs"],
+    "vue": ["vue.js", "vuejs"],
+    "react": ["react.js", "reactjs"],
+    "c++": ["cpp", "c plus plus"],
+    "dotnet": [".net", "asp.net"],
+    "ci/cd": ["ci cd", "cicd", "continuous integration", "continuous deployment"],
+    "deep learning": ["deep-learning", "dl"],
+    "machine learning": ["ml", "machine-learning"],
+    "scikit": ["scikit-learn", "sklearn"],
+    "postgresql": ["postgres", "psql"],
+    "javascript": ["js"],
+    "typescript": ["ts"],
+    "python": ["py"]
+  },
+
+  "job_roles": {
+    "software_developer": {
+      "label": "Software Developer",
+      "required": ["python", "javascript", "git", "sql", "api", "rest", "oop", "dsa"],
+      "preferred": ["react", "node", "docker", "aws", "typescript", "postgresql", "linux"]
+    },
+    "full_stack": {
+      "label": "Full Stack Developer",
+      "required": ["react", "node", "mongodb", "sql", "git", "api", "javascript", "html", "css"],
+      "preferred": ["typescript", "docker", "aws", "graphql", "redis", "postgresql", "express"]
+    },
+    "data_analyst": {
+      "label": "Data Analyst",
+      "required": ["python", "sql", "excel", "pandas", "numpy", "tableau", "matplotlib"],
+      "preferred": ["powerbi", "tensorflow", "scikit", "r", "spark", "seaborn", "jupyter"]
+    },
+    "frontend_developer": {
+      "label": "Frontend Developer",
+      "required": ["react", "javascript", "html", "css", "typescript", "git", "rest"],
+      "preferred": ["vue", "angular", "tailwind", "webpack", "redux", "next", "figma", "jest"]
+    },
+    "devops_engineer": {
+      "label": "DevOps Engineer",
+      "required": ["docker", "kubernetes", "aws", "git", "linux", "ci/cd", "bash"],
+      "preferred": ["terraform", "azure", "jenkins", "nginx", "python", "ansible", "gcp"]
+    }
+  },
+
+  "resume_sections": {
+    "contact":    ["email", "phone", "linkedin", "github", "portfolio", "@", "+91", "+1"],
+    "education":  ["education", "degree", "b.tech", "btech", "bsc", "msc", "mtech", "university", "college", "cgpa", "gpa", "batch"],
+    "experience": ["experience", "internship", "intern", "worked", "employed", "company", "organization"],
+    "projects":   ["project", "built", "developed", "created", "designed", "implemented", "deployed"],
+    "skills":     ["skills", "technologies", "tech stack", "technical skills", "tools", "languages"],
+    "achievements":["achievement", "award", "winner", "hackathon", "certification", "certified", "publication"]
+  }
+}
