@@ -12,9 +12,22 @@
 
 ---
 
+## Screenshots
+
+### Analyzer Dashboard
+![ATS Dashboard](./screenshot/ats.png)
+
+### ATS PDF Report
+![ATS PDF Report](./screenshot/atspdf.png)
+
+### Full Report View
+![Full Report](./screenshot/rest%20report.png)
+
+---
+
 ## What It Does
 
-Upload your resume or paste the text — the system instantly evaluates it the way real company ATS software does. It tells you your ATS compatibility score, which skills are detected, what's missing for your target role, and exactly how to improve.
+Upload your resume or paste the text — the system instantly evaluates it the way real company ATS software does. It tells you your ATS compatibility score, which skills are detected, what's missing for your target role, and exactly how to improve. Download the full analysis as a professional PDF report.
 
 ---
 
@@ -27,6 +40,7 @@ Upload your resume or paste the text — the system instantly evaluates it the w
 - **Section Completeness Check** — contact, education, experience, projects, skills, achievements
 - **Smart Suggestions** — personalized tips based on what's actually missing
 - **PDF + TXT Upload** — drag & drop or browse
+- **Download ATS Report** — export full analysis as a professional light-theme PDF
 - **Clean Dark UI** — 2-column layout with animated score rings
 
 ---
@@ -60,7 +74,7 @@ calcAtsScore()        →  weighted scoring formula
         ↓
 generateSuggestions() →  context-aware, skill-specific feedback
         ↓
-Output (JSON → React dashboard)
+Output (JSON → React dashboard + downloadable PDF report)
 ```
 
 ---
@@ -71,6 +85,7 @@ Output (JSON → React dashboard)
 |-------|-----------|
 | Frontend | React 18, Vite |
 | Backend | Node.js, Express |
+| PDF Generation | jsPDF |
 | PDF Parsing | pdf2json |
 | File Upload | Multer |
 | Deployment (Frontend) | Vercel |
@@ -83,20 +98,26 @@ Output (JSON → React dashboard)
 ```
 resume-analyzer/
 │
-├── client/                  ← React + Vite frontend
+├── client/                   ← React + Vite frontend
 │   ├── src/
-│   │   ├── App.jsx          ← main UI (2-column layout, score rings)
-│   │   ├── api.js           ← backend communication
+│   │   ├── App.jsx           ← main UI (2-column layout, score rings)
+│   │   ├── api.js            ← backend communication
+│   │   ├── Generatepdf.jsx   ← professional PDF report generator
 │   │   ├── main.jsx
 │   │   └── styles.css
 │   ├── index.html
 │   └── package.json
 │
-└── server/                  ← Node.js + Express backend
-    ├── index.js             ← Express server + routes
-    ├── analyzer.js          ← NLP logic (normalize, extract, score)
-    ├── skills.json          ← skills database + job roles
-    └── package.json
+├── server/                   ← Node.js + Express backend
+│   ├── index.js              ← Express server + routes
+│   ├── analyzer.js           ← NLP logic (normalize, extract, score)
+│   ├── skills.json           ← skills database + job roles
+│   └── package.json
+│
+└── screenshot/               ← Project screenshots
+    ├── ats.png
+    ├── atspdf.png
+    └── rest report.png
 ```
 
 ---
