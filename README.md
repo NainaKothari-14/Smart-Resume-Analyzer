@@ -14,14 +14,16 @@
 
 ## Screenshots
 
-### Analyzer Dashboard
-![ATS Dashboard](./screenshot/ats.png)
+<div align="center">
 
-### ATS PDF Report
-![ATS PDF Report](./screenshot/atspdf.png)
+<img src="./screenshot/ats.png" alt="ATS Dashboard" width="49%" />
+<img src="./screenshot/rest report.png" alt="Full Report View" width="49%" />
 
-### Full Report View
-![Full Report](./screenshot/rest%20report.png)
+<br/><br/>
+
+<img src="./screenshot/atspdf.png" alt="ATS PDF Report" width="70%" />
+
+</div>
 
 ---
 
@@ -115,9 +117,6 @@ resume-analyzer/
 │   └── package.json
 │
 └── screenshot/               ← Project screenshots
-    ├── ats.png
-    ├── atspdf.png
-    └── rest report.png
 ```
 
 ---
@@ -125,30 +124,36 @@ resume-analyzer/
 ## Local Setup
 
 ### 1. Clone the repo
+
 ```bash
 git clone https://github.com/NainaKothari-14/Smart-Resume-Analyzer.git
 cd Smart-Resume-Analyzer
 ```
 
 ### 2. Start the backend
+
 ```bash
 cd server
 npm install
 npm run dev
-# runs on http://localhost:5000
 ```
 
+Server runs at `http://localhost:5000`
+
 ### 3. Start the frontend
+
 ```bash
 cd client
 npm install
 npm run dev
-# runs on http://localhost:5173
 ```
+
+Client runs at `http://localhost:5173`
 
 ### 4. Environment variables
 
 Create `client/.env.development`:
+
 ```
 VITE_API_URL=http://localhost:5000/api
 ```
@@ -163,3 +168,12 @@ VITE_API_URL=http://localhost:5000/api
 | GET | `/api/roles` | Get all job roles |
 | POST | `/api/analyze` | Analyze pasted text |
 | POST | `/api/upload` | Analyze PDF or TXT file |
+
+---
+
+## Author
+
+**Naina Kothari**
+GitHub: [@NainaKothari-14](https://github.com/NainaKothari-14)
+
+If this helped you, consider giving it a star ⭐
